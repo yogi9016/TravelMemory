@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yogi9016/TravelMemory/', 
-                git branch: 'main'
+                git branch: 'main', url: 'https://github.com/yogi9016/TravelMemory.git'
             }
         }
         stage('Install') {
