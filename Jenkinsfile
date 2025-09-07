@@ -8,15 +8,14 @@ pipeline {
         }
         stage('Install') {
             steps {
-                sh 'cd backend'
-                sh 'npm install'
+                sh 'cd backend; npm install'
             }
         }
         stage('Build') {
             steps {
-                sh 'cd backend'
-                sh 'npm run build'
+                sh 'cd backend; npm run build'
             }
         }
+
     }
 }
